@@ -8,6 +8,6 @@ public class XadRoutes extends RouteBuilder {
 
     @Override
     public void configure() throws Exception {
-        from("file:../jammazwan.shared/src/main/resources/data/?noop=true&fileName=name.csv").log("${body}");
+        from("file:../jammazwan.shared/src/main/resources/data/csv/?noop=true&fileName=name.csv").log("${body}");
     }
 }
